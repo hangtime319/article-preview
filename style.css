@@ -39,6 +39,7 @@ main {
     background-color: var(--white);
     border-radius: 0 5px 5px 0;
     box-shadow: 12px 10px 40px -1px rgba(0,0,0,0.09);
+    position: relative;
 }
 
 .container > img {
@@ -51,7 +52,6 @@ main {
     flex-direction: column;
     justify-content: space-around;
     padding: 30px 40px;
-    position: relative;
 }
 
 .content h1 {
@@ -95,10 +95,11 @@ main {
     color: var(--grayish-blue);
 }
 
-#share {
+.share {
     width: 32px;
     height: 32px;
-    margin: auto 0;
+    align-self: self-end;
+    margin: -45px 0 0 0;
     padding: 8px;
     border-radius: 50%;
     background-color: var(--light-grayish-blue);
@@ -107,8 +108,7 @@ main {
 
 .social-media {
     background-color: var(--very-dark-grayish-blue);
-    display: none;
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 230px;
@@ -119,8 +119,8 @@ main {
     /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 58% 75%, 50% 100%, 42% 76%, 0 75%); */
     /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 50% 100%, 42% 100%, 0% 100%); */
     position: absolute;
-    left: 360px;
-    top: 115px;
+    right: -60px;
+    top: 120px;
 }
 
 .social-media p {
@@ -159,21 +159,27 @@ main {
         text-align: left;
         width: 230px;
     }
-    .content-user {
-        /* display: none; */
-    }
     .user p strong, .user p span{
         font-size: 0.75rem;
     }
-    #share {
+    .share {
         width: 28px;
         height: auto;
+        margin-top: -30px;
     }
     .social-media {
-        top: 215px;
+        /* justify-content: center; */
+        top: 454px;
         left: 0;
         width: 100%;
         border-radius: 0 0 8px 8px;
+    }
+    .social-media picture img {
+        width: 28px;
+        padding: 8px;
+        background-color: var(--desaturated-dark-blue);
+        border-radius: 50%;
+        margin-left: 30px;
     }
 
 }
