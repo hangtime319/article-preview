@@ -148,6 +148,7 @@ main {
 @media (max-width: 475px) {
     main {
         margin: 60px 30px;
+        height: 100%;
     }
     .container {
         flex-direction: column;
