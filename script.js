@@ -7,7 +7,7 @@ function shareSocialMedia() {
     var screenSize = window.screen.width;
     socialMedia.classList.toggle("display-none");
     
-    if (screenSize > 376) {
+    if (screenSize > 475) {
         btn_shareMedia.classList.add("display-none");
     }
 }
